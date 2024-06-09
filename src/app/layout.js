@@ -13,15 +13,22 @@ const prompt = Prompt({
 	display: 'swap',
 });
 
+
+// imports omitidos
+
 export default function RootLayout({ children }) {
-	return (
-		<html lang="pt-br" className={prompt.className}>
-			<body>
-				<div className='app-container'>
-					<Aside />
-					{children}
-				</div>
-			</body>
-		</html>
-	);
+  return (
+    <html lang="pt-br" className={prompt.className}>
+      <body>
+        <div className='app-container'>
+          <div>
+            <Aside />
+          </div>
+          <div className='main-content'>
+            {children}
+          </div>
+        </div>
+      </body>
+    </html>
+  )
 }
