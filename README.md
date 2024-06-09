@@ -10,3 +10,8 @@ json-server posts.json -p 3042
 ```bash
 npm i winston
 ```
+
+3. Render [Markdown with Next](https://nextjs.org/learn-pages-router/basics/dynamic-routes/render-markdown):
+```bash
+npm install remark remark-html
+```
